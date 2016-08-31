@@ -1,8 +1,8 @@
 import socket
 
-socket.setdefaulttimeout(2)
+socket.setdefaulttimeout(10)
 s = socket.socket()
-s.connect(('127.0.0.1',21))
+s.connect(('127.0.0.1',12345))
 ans = s.recv(1024)
 print ans
 

@@ -1,9 +1,9 @@
 import socket
-socket.setdefaulttimeout(2)
+socket.setdefaulttimeout(100)
 s = socket.socket()
 
 try :
- s.connect(("192.168.95.149",21))
+ s.connect(("127.0.0.1",12345))
 except Exception, e:
  print "[-] Error = "+str(e)
 
